@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dasboard User Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand"> 
+                <span class="ti-unlink"></span> 
+                <span>Dasboard</span>
+            </h3> 
+            <label for="sidebar-toggle" class="img-1"></label>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" class="">
+                        <span class="ti-home active"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="ti-calendar"></span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="ti-email"></span>
+                        <span>E-mail</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="ti-comment"></span>
+                        <span>Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="ti-user"></span>
+                        <span>User</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="search-wrapper">
+                <h6><strong>Welcome</strong></h6>
+                <h2>Jane Doe</h2>
+            </div>
+                <span class="badge button-project">
+                    New Project
+                </span>
+        </header>
+        <main>
+            <section class="recent">
+                <div class="dash-cards">
+                    <div class="card-single d-flex" >
+                        <div class="b-right p-1">
+                            <h4 class="dash-title"><strong>STATISTICS</strong></h4>
+                            <h5 class="dash-title"><strong>Proceses</strong></h5>
+                            <div class="d-flex display">
+                                <div class="d-block">
+                                    <div class="statChartHolder">
+                                        <div class="progress-pie-chart m-1" data-percent="67">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-percents">
+                                            <div class="pcc-percents-wrapper">
+                                                <span>%10</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mt-1 ml-1 w-100"><span>Back End</span></p>
+                                            <span class="mt-1 ml-1 badge badge-warning">
+                                                Overdue
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="statChartHolder">
+                                        <div class="progress-pie-chart m-1" data-percent="67">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-percents">
+                                            <div class="pcc-percents-wrapper">
+                                                <span>%10</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mt-1 ml-1 w-100"><span>Front end</span></p>
+                                            <span class="mt-1 ml-1 badge c-purple">
+                                                Delayed
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div class="statChartHolder">
+                                        <div class="progress-pie-chart m-1" data-percent="67">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-percents">
+                                            <div class="pcc-percents-wrapper">
+                                                <span>%10</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mt-1 ml-1 w-100"><span>Desing</span></p>
+                                            <span class="mt-1 ml-1 badge c-green">
+                                                Ontrack
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="statChartHolder">
+                                        <div class="progress-pie-chart m-1" data-percent="67">
+                                            <div class="ppc-progress">
+                                                <div class="ppc-progress-fill"></div>
+                                            </div>
+                                            <div class="ppc-percents">
+                                            <div class="pcc-percents-wrapper">
+                                                <span>%10</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mt-1 ml-1 w-100"><span>Copyrighting</span></p>
+                                            <span class="mt-1 ml-1 badge c-green">
+                                                Ontrack
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="chart-container">
+                                <div>
+                                    <span class="ti-more-alt" style="float: right;"></span>
+                                    <h4 class="dash-title"><strong>Deadlines</strong></h4>
+                                    <ul class="horizontal-bar-chart">
+                                            <p>Backend</p>
+                                        <li>
+                                            <span class="index horizontal-radius b-yellow" style="width: 70%"></span>
+                                        </li>
+                                            <p>Frontend</p>
+                                        <li>
+                                            <span class="index horizontal-radius b-purple" style="width: 35%"></span>
+                                        </li>
+                                        <p>Desing</p>
+                                        <li>
+                                            <span class="index horizontal-radius b-green" style="width: 20%"></span>
+                                        </li>
+                                        
+                                        <p>Copyrighting</p>
+                                        <li>
+                                            <span class="index horizontal-radius bd-green" style="width: 20%"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block">
+                        <div class="card-single card-c">
+                            <div class="">
+                                <div class="d-block">
+                                    <div class="d-flex space-b">
+                                        <div>
+                                            <h4 class=""><strong>MONTHLY GOAL</strong></h4>
+                                            <h5 class="dash-title"><strong>January</strong></h5>
+                                        </div>
+                                        <form action="#" class="">
+                                            <select name="cars" id="" class="" >
+                                                <option value="Monthly">Monthly</option>
+                                                <option value="Monthly">Monthly</option>
+                                                <option value="Monthly">Monthly</option>
+                                                <option value="Monthly">Monthly</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="d-flex f-right">
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h1>$1.000.000</h1>
+                            </div>
+                        </div>
+                        <div class="card-single" style="margin-top: 40px;">
+                            <span class="ti-more-alt" style="float: right;"></span>
+                            <div class="card-body d-flex f-end">
+                                <div>
+                                    <canvas id="chart"></canvas>
+                                </div>
+                                <div class="mb-1 text-purple" >
+                                    <h3>$265.000</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recent">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>CHAT</th>
+                                        <th><span class="ti-more-alt" style="float: right;"></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>P</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Peter Dawson</h4>
+                                                <p>Developer</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge c-green">
+                                                Active
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>G</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Gina Stewart</h4>
+                                                <p>Desiner</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge c-green">
+                                                Active
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>J</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Janet Smith</h4>
+                                                <p>Frontend deveoper</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge c-green">
+                                                Active
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>M</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Mia Wilde</h4>
+                                                <p>Copyrighter</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-warning">
+                                                Busy
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>P</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Peter Dawson</h4>
+                                                <p>Developer</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge badge-warning">
+                                                Busy
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <div class="summary-card d-flex">
+                            <table class="b-right">
+                                <thead>
+                                    <tr>
+                                        <th>UPCOMING APOINMENTS</th>
+                                        <th><span class="ti-more-alt" style="float: right;"></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>P</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Peter Dawson</h4>
+                                                <div class="d-flex">
+                                                    <span class="ti-calendar mr-1"></span>
+                                                    <p class="">6/11</p>
+                                                    <span class="ti-alarm-clock ml-1"></span>
+                                                    <p>15.00hs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge cancel-button">
+                                                Cancel
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>G</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Gina Stewart</h4>
+                                                <div class="d-flex">
+                                                    <span class="ti-calendar mr-1"></span>
+                                                    <p class="">6/11</p>
+                                                    <span class="ti-alarm-clock ml-1"></span>
+                                                    <p>15.00hs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge cancel-button">
+                                                Cancel
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>J</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Janet Smith</h4>
+                                                <div class="d-flex">
+                                                    <span class="ti-calendar mr-1"></span>
+                                                    <p class="">6/11</p>
+                                                    <span class="ti-alarm-clock ml-1"></span>
+                                                    <p>15.00hs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge cancel-button">
+                                                Cancel
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>M</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Mia Wilde</h4>
+                                                <div class="d-flex">
+                                                    <span class="ti-calendar mr-1"></span>
+                                                    <p class="">6/11</p>
+                                                    <span class="ti-alarm-clock ml-1"></span>
+                                                    <p>15.00hs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge cancel-button">
+                                                Cancel
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex">
+                                            <div class="user-1 ml-1"><h1>P</h1></div>
+                                            <div class="ml-1">
+                                                <h4>Peter Dawson</h4>
+                                                <div class="d-flex">
+                                                    <span class="ti-calendar mr-1"></span>
+                                                    <p class="">6/11</p>
+                                                    <span class="ti-alarm-clock ml-1"></span>
+                                                    <p>15.00hs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge cancel-button">
+                                                Cancel
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="wrapper">
+                                <div class="container-calendar">
+                                    <h3 id="monthAndYear" class="text-grey"></h3>
+                                    <div class="button-container-calendar">
+                                     <div class="footer-container-calendar">    
+                                         <button id="previous" onclick="previous()">&#8249;</button>
+                                         <select id="month" onchange="jump()">
+                                             <option value=0>Jan</option>
+                                             <option value=1>Feb</option>
+                                             <option value=2>Mar</option>
+                                             <option value=3>Apr</option>
+                                             <option value=4>May</option>
+                                             <option value=5>Jun</option>
+                                             <option value=6>Jul</option>
+                                             <option value=7>Aug</option>
+                                             <option value=8>Sep</option>
+                                             <option value=9>Oct</option>
+                                             <option value=10>Nov</option>
+                                             <option value=11>Dec</option>
+                                         </select>
+                                         <select id="year" onchange="jump()"></select>       
+                                   
+                                        <button id="next" onclick="next()">&#8250;</button>
+                                    </div>
+                                     </div>
+                                    <table class="table-calendar" id="calendar" data-lang="en">
+                                        <thead id="thead-month"></thead>
+                                        <tbody id="calendar-body"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        var ctx = document.getElementById('chart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type : 'line',
+            data: {
+                labels : ['','','',''],
+                datasets: [{
+                    label: 'PROJECTION',
+                    backgroundColor: '#7869de61',
+                    borderColor: '#7869de',
+                    data: [0, 90, 30,300],
+        }]
+            }
+        });
+    </script>
+</body>
+</html>
